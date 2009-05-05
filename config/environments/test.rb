@@ -1,3 +1,8 @@
+# These lines will test autotest to run, and look for changes to, your specs (rather than 
+# test unit tests) and your cucumber features.
+ENV['AUTOFEATURE'] = "true"
+ENV['RSPEC'] = "true"
+
 # Settings specified here will take precedence over those in config/environment.rb
 
 # The test environment is used exclusively to run your application's
@@ -26,3 +31,11 @@ config.action_mailer.delivery_method = :test
 # This is necessary if your schema can't be completely dumped by the schema dumper,
 # like if you have constraints or database-specific column types
 # config.active_record.schema_format = :sql
+
+config.gem "rspec", :lib => false, :version => ">= 1.2.2" 
+config.gem "rspec-rails", :lib => false, :version => ">= 1.2.2"
+config.gem "cucumber", :lib => false, :version => ">= 0.3.2"
+config.gem "thoughtbot-factory_girl", :lib    => "factory_girl", :version => ">= 1.2.1", :source => "http://gems.github.com"
+config.gem "webrat", :lib => false, :version => ">= 0.4.4"
+config.gem "nokogiri", :lib => false, :version => ">= 1.2.2"
+config.gem 'thoughtbot-shoulda', :lib => false, :version => "2.10.1"
