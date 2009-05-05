@@ -9,6 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20090505043354) do
+
+  create_table "events", :force => true do |t|
+    t.string   "title",                           :null => false
+    t.datetime "from",                            :null => false
+    t.integer  "duration",         :default => 0
+    t.integer  "from_granularity", :default => 1
+    t.integer  "to_granularity",   :default => 1
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

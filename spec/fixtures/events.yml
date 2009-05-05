@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  from: 2009-05-04 21:32:25
+  from_granularity: 1
+  to: 2009-05-04 21:32:25
+  to_granularity: 1
+
+two:
+  title: MyString
+  from: 2009-05-04 21:32:25
+  from_granularity: 1
+  to: 2009-05-04 21:32:25
+  to_granularity: 1
